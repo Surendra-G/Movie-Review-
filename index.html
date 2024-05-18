@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie App</h1>
+        <hr>
+        <br>
+        <input type="text" id="titleInput" placeholder="Enter name of the movie">
+        <input type="text" id="directorInput" placeholder="Enter Director Name">
+        <input type="date" id="releaseInput" placeholder="Enter Release Date">
+        <input type="number" id="rating" placeholder="Rating (0-5)">
+        <button id="btn">Add Movie</button>
+        
+        <!-- Buttons for sorting -->
+        <div>
+            <button id="sortTitle">Sort by Title</button>
+            <button id="sortDirector">Sort by Director</button>
+            <button id="sortRelease">Sort by Release Date</button>
+            <button id="sortRating">Sort by Rating</button>
+        </div>
+
+        <table id="movieTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Director</th>
+                    <th>Release Date</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="movieList"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
